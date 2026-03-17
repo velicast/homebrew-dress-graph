@@ -1,8 +1,8 @@
 class DressGraph < Formula
   desc "DRESS edge similarity for graphs — C/C++ library"
   homepage "https://github.com/velicast/dress-graph"
-  url "https://github.com/velicast/dress-graph/archive/refs/tags/v0.6.0.tar.gz"
-  sha256 "e49c3ab9d0ea39075ac533b91badc8139d5b7accc823e93ca802c5b794f413a2"
+  url "https://github.com/velicast/dress-graph/archive/refs/tags/v0.6.1.tar.gz"
+  sha256 "0a8e6b7f006dd3c2dc5184993dca94718dac99fca827f9ee18c0a67448c67692"
   license "MIT"
 
   depends_on "cmake" => :build
