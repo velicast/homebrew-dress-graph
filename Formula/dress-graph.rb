@@ -1,8 +1,8 @@
 class DressGraph < Formula
   desc "DRESS edge similarity for graphs — C/C++ library"
   homepage "https://github.com/velicast/dress-graph"
-  url "https://github.com/velicast/dress-graph/archive/refs/tags/v0.6.1.tar.gz"
-  sha256 "0a8e6b7f006dd3c2dc5184993dca94718dac99fca827f9ee18c0a67448c67692"
+  url "https://github.com/velicast/dress-graph/archive/refs/tags/v0.7.0.tar.gz"
+  sha256 "ab3288eda229014452a227d7de9d4f0e63053e93726a1a69049cb775782ac9bb"
   license "MIT"
 
   depends_on "cmake" => :build
@@ -22,10 +22,10 @@ class DressGraph < Formula
       int main() {
         int U[] = {0, 1, 2};
         int V[] = {1, 2, 0};
-        p_dress_graph_t g = init_dress_graph(3, 3, U, V, NULL, 0, 0);
+        p_dress_graph_t g = dress_init_graph(3, 3, U, V, NULL, 0, 0);
         if (!g) return 1;
         printf("OK\\n");
-        free_dress_graph(g);
+        dress_free_graph(g);
         return 0;
       }
     C
